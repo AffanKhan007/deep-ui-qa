@@ -90,7 +90,7 @@ pip install playwright && playwright install chromium
 ### One-command install
 
 ```bash
-git clone https://github.com/<your-username>/deep-ui-qa.git
+git clone https://github.com/AffanKhan007/deep-ui-qa.git
 cd deep-ui-qa
 
 # User-level install (available in every project)
@@ -103,7 +103,7 @@ cd deep-ui-qa
 Windows PowerShell:
 
 ```powershell
-git clone https://github.com/<your-username>/deep-ui-qa.git
+git clone https://github.com/AffanKhan007/deep-ui-qa.git
 cd deep-ui-qa
 
 .\install.ps1 -Scope Global
