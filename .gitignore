@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# QA workspaces and reports (generated locally)
+qa-*/
+*.xlsx
+!examples/*.xlsx
+
+# Secrets and browser state
+.env
+.env.*
+*.har
+storage_state.json
+auth.json
+cookies.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

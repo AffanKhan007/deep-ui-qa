@@ -1,0 +1,29 @@
+{
+  "skill_name": "deep-ui-qa",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use deep-ui-qa to audit https://staging.acme-hr.example. It is a staging environment. I have an admin login and a payroll-admin login; I will send the passwords separately. Scope is the whole app. Please do not finalise any payroll run or send any email. Depth Deep. Produce the Excel report.",
+      "expected_output": "A workspace with recon, atlas, model, test cases and evidence; a validated Excel workbook with Summary, Test Cases, Defects, Coverage, Field Atlas, Relationships, Test Data & Config and Open Questions. It should ask only for missing intake details, confirm staging, avoid forbidden actions, and not invent results.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "QA the Payroll module of our staging ERP at https://staging.example.com through the UI only. We have no source code. Also test the upstream settings in Employees, Leave, Loans and Attendance and the downstream Reports and Payslips. I only have admin and payroll-admin accounts; no manager account. Never finalise a payroll run. Generate the test cases and the Excel report.",
+      "expected_output": "A ring-scoped audit of Payroll plus correlated modules, a role-coverage limitation for the missing manager role, cross-module ripple cases, independent payroll calculations, evidence for every fail, and a report that clearly states what was not tested.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Use deep-ui-qa on the Subscription Billing module at https://staging.example.com. Apply these rules: (1) mid-month plan upgrades prorate by exact calendar days in the active month; (2) a tax-exempt customer must show zero VAT on draft invoices but paid invoices must not change; (3) a credit note cannot exceed the original invoice. Test happy paths, retroactive changes, boundaries and role restrictions, then output the Excel report.",
+      "expected_output": "Test cases whose oracles come from the three supplied rules plus independent calculations; proration boundary cases; a retroactive-change test that distinguishes draft from paid invoices; credit-note limits; evidence and a validated report with open questions where the rules are ambiguous.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I need a deep UI QA plan for https://staging.example.com, but this environment has no browser tool and I cannot install one. Can you still use deep-ui-qa? I can run steps myself and send screenshots.",
+      "expected_output": "The agent explicitly switches to guided mode, does not claim to have executed anything, produces recon and test-design artifacts plus a guided execution sheet with exact steps and evidence requests, and explains what will remain unverified.",
+      "files": []
+    }
+  ]
+}
